@@ -1,0 +1,32 @@
+.fondo-modulo {
+  background-color: #191E22;
+}
+
+.titulo-1 {
+  color: #EF1C2D;
+}
+
+.titulo-2 {
+  color: #FDFFFE;
+}
+
+img{
+  height: 100%
+}
+
+.alto-modulo {
+  height: 250px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#linea-inferior {
+  width: 90px;
+  height: 10px;
+  background-color: #EF1C2D;
+  position: absolute;
+  top:200px;
+}

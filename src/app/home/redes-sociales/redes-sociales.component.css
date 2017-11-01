@@ -1,0 +1,19 @@
+div {
+  position: fixed;
+  background: #E2393E;
+  right:0px;
+  top:250px;
+  color: white;
+  z-index: 3;
+  border-radius: 3px 0 0 3px;
+}
+
+#redes-sociales a {
+  color: white;
+  text-decoration: none;
+}
+
+#redes-sociales a:hover {
+  color: #D1CFCF;
+  text-decoration: none;
+}
