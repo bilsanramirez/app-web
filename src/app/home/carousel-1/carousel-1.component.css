@@ -1,4 +1,7 @@
-img {
-  height: 500px;
+
+.carousel {
+  position: relative;
+  top: -40px;
+  z-index: 5;
 }
 
