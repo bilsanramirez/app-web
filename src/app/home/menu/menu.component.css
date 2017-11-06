@@ -95,3 +95,47 @@
 }
 
 
+.menu-header {
+  background-image: url('assets/img/img_header_menu.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  z-index: 1;
+  height: 170px;
+
+}
+
+.nav-bar-header {
+  z-index: 20;
+}
+
+.menu1 {
+
+}
+
+.menu2 {
+  padding-top: 10px;
+  color: white;
+}
+
+.menu2 a {
+  color: white;
+  font-size: 16px;
+}
+
+.menu1 a {
+  color: white;
+  font-size: 14px;
+}
+
+input {
+  background-color: #5C6670;
+  border: 0;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+
+

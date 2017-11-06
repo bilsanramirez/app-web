@@ -1,69 +1,11 @@
-
-/*-------- FILA 1 -------*/
-
-.fila1 {
-  background-color: #EE1A30;
-  height: 40px;
-}
-
-.fila1 .columna1{
-  width: 25%;
-  background-color: #FFFFFF;
-  transform: skewx(-230deg);
-  transform-origin: 100% 0;
-  height: 100%;
-}
-
-
-/*-------- FILA 2 -------*/
-
-.fila2 {
-  background-color: #343B41;
-  height: 60px;
-}
-
-.fila2 .columna1{
-  width: 21.5%;
-  background-color: #EE1A30;
-  transform: skewx(-230deg);
-  transform-origin: 100% 0;
-  height: 100%;
-}
-
-.fila2 .columna2{
-  padding-top: 14px;
-  width: 60%;
-}
-
-.fila2 .columna2 h3{
-  color: #5E6770;
-  float: right;
-}
-
-
-/*-----------------------------------------------*/
-
-
-.alto-footer {
-  height: 60px;
-}
-
-.sesgar2 {
+img {
+  height:121px;
   width: 100%;
-  background-color: #FFFFFF;
-  transform: skewx(-230deg);
-  transform-origin: 100% 0;
-  height: 100%;
 }
 
-.sesgar {
-  width: 100%;
-  background-color: #EE1A30;
-  transform: skewx(-230deg);
-  transform-origin: 100% 0;
-  height: 100%;
+.footer-secundario{
+  height: 20px;
 }
-
 
 .footer-fecha {
   background-color: white;
@@ -71,9 +13,3 @@
   font-size: 12px;
 }
 
-img {
-  margin-top: 10px;
-  margin-left: 20px;
-  transform: skewx(230deg);
-  transform-origin: 100% 0;
-}

@@ -1,5 +1,11 @@
 img {
-  width: 384px;
-  height: 289px;
+  height: 180px;
 }
+
+.motos
+   {
+    position: relative;
+    top: -70px;
+  }
+
 
