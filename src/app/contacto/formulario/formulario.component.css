@@ -1,0 +1,22 @@
+h3 {
+  border-left: 4px solid #EB1E30;
+  padding-left: 17px;
+}
+
+input, select, textarea {
+  margin-bottom: 15px;
+  background-color: #343B41;
+  color: white;
+}
+
+textarea {
+  height: 196px;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.fondo  {
+  background-color: #343B41;
+}

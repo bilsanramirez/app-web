@@ -39,5 +39,12 @@ input {
   width:130px;
 }
 
+.menu2 .nav li a:hover {
+  border-top: 4px solid #E2393E;
+}
+
+.menu2 .nav li a {
+  transition: border-top 0.2s;
+}
 
 

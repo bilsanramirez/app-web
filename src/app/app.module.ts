@@ -19,10 +19,13 @@ import { ModulosComponent } from './home/modulos/modulos.component';
 import { FilosofiaComponent } from './home/filosofia/filosofia.component';
 import { FooterComponent } from './home/footer/footer.component';
 import { MotosComponent } from './home/motos/motos.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { FormularioComponent } from './contacto/formulario/formulario.component';
 
 const routes: Routes = [
   {path: 'sitio-en-mantenimiento', component: SitioEnMantenimientoComponent},
   {path: '', component: HomeComponent},
+  {path: 'contacto', component: ContactoComponent}
 ];
 
 @NgModule({
@@ -42,7 +45,9 @@ const routes: Routes = [
     ModulosComponent,
     FilosofiaComponent,
     FooterComponent,
-    MotosComponent
+    MotosComponent,
+    ContactoComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
