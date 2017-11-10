@@ -18,14 +18,19 @@ import { RedesSocialesComponent } from './home/redes-sociales/redes-sociales.com
 import { ModulosComponent } from './home/modulos/modulos.component';
 import { FilosofiaComponent } from './home/filosofia/filosofia.component';
 import { FooterComponent } from './home/footer/footer.component';
-import { MotosComponent } from './home/motos/motos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FormularioComponent } from './contacto/formulario/formulario.component';
+import { MapaComponent } from './contacto/mapa/mapa.component';
+import { MotosComponent } from './motos/motos.component';
+import { ListadoMotosComponent } from './motos/listado-motos/listado-motos.component';
+import { PaginacionMotosComponent } from './motos/paginacion-motos/paginacion-motos.component';
+import { MotosRelevantesComponent } from './home/motos/motos.component';
 
 const routes: Routes = [
   {path: 'sitio-en-mantenimiento', component: SitioEnMantenimientoComponent},
   {path: '', component: HomeComponent},
-  {path: 'contacto', component: ContactoComponent}
+  {path: 'contacto', component: ContactoComponent},
+  {path: 'motos', component: MotosComponent}
 ];
 
 @NgModule({
@@ -47,7 +52,12 @@ const routes: Routes = [
     FooterComponent,
     MotosComponent,
     ContactoComponent,
-    FormularioComponent
+    FormularioComponent,
+    MapaComponent,
+    MotosComponent,
+    ListadoMotosComponent,
+    PaginacionMotosComponent,
+    MotosRelevantesComponent
   ],
   imports: [
     BrowserModule,
