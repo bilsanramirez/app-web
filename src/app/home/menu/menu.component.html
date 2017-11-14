@@ -16,6 +16,7 @@
               </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">CREDITO</a>
+                </li>
              <li class="nav-item">
               <a class="nav-link" routerLink="contacto">CONTACTO</a>
             </li>
@@ -33,7 +34,7 @@
               <div class="col-12 menu1">
                   <ul class="nav justify-content-end">
                       <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Servicio al cliente</a>
+                        <a class="nav-link" href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Servicio al cliente</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Talleres</a>
@@ -48,19 +49,25 @@
             <div class="col-12 menu2">
                 <ul class="nav justify-content-end">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">{{ menu[0] }}</a>
+                        <a class="nav-link" [routerLinkActive]="['active']" href="#">HOME</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/motos']">{{ menu[0] }}</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">REPUESTOS</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">ACCESORIOS</a>
+                      <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/accesorios']">ACCESORIOS</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">CREDITO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTO</a>
+                      <a class="nav-link" href="#">PROMOCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/contacto']">CONTACTO</a>
                       </li>
                       <li class="nav-item">
                           <input type="text" class="d-none d-lg-inline">

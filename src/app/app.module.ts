@@ -25,12 +25,26 @@ import { MotosComponent } from './motos/motos.component';
 import { ListadoMotosComponent } from './motos/listado-motos/listado-motos.component';
 import { PaginacionMotosComponent } from './motos/paginacion-motos/paginacion-motos.component';
 import { MotosRelevantesComponent } from './home/motos/motos.component';
+import { CategoriasMotosComponent } from './categorias-motos/categorias-motos.component';
+import { ListadoCategoriasComponent } from './categorias-motos/listado-categorias/listado-categorias.component';
+import { AccesoriosComponent } from './accesorios/accesorios.component';
+import { ListadoAccesoriosComponent } from './accesorios/listado-accesorios/listado-accesorios.component';
+import { ListadoCategoriasAccesoriosComponent } from './accesorios/listado-categorias-accesorios/listado-categorias-accesorios.component';
+import { PaginacionAccesoriosComponent } from './accesorios/paginacion-accesorios/paginacion-accesorios.component';
+import { AccesorioComponent } from './accesorios/accesorio/accesorio.component';
+
+// Servicios
+import { AccesoriosService } from './servicios/accesorios.service';
 
 const routes: Routes = [
   {path: 'sitio-en-mantenimiento', component: SitioEnMantenimientoComponent},
   {path: '', component: HomeComponent},
   {path: 'contacto', component: ContactoComponent},
-  {path: 'motos', component: MotosComponent}
+  {path: 'motos-categorias', component: CategoriasMotosComponent},
+  {path: 'motos', component: MotosComponent},
+  {path: 'accesorios', component: AccesoriosComponent},
+  {path: 'accesorios/cascos', component: ListadoAccesoriosComponent},
+  {path: 'accesorios/accesorio1', component: AccesorioComponent}
 ];
 
 @NgModule({
@@ -57,7 +71,16 @@ const routes: Routes = [
     MotosComponent,
     ListadoMotosComponent,
     PaginacionMotosComponent,
-    MotosRelevantesComponent
+    MotosRelevantesComponent,
+    CategoriasMotosComponent,
+    ListadoCategoriasComponent,
+    CategoriasMotosComponent,
+    ListadoCategoriasComponent,
+    AccesoriosComponent,
+    ListadoAccesoriosComponent,
+    ListadoCategoriasAccesoriosComponent,
+    PaginacionAccesoriosComponent,
+    AccesorioComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +88,7 @@ const routes: Routes = [
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [ AccesoriosService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
