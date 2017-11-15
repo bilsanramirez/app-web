@@ -35,6 +35,9 @@ import { AccesorioComponent } from './accesorios/accesorio/accesorio.component';
 
 // Servicios
 import { AccesoriosService } from './servicios/accesorios.service';
+import { InicioSesionComponent } from './login/inicio-sesion/inicio-sesion.component';
+import { RegistroComponent } from './login/registro/registro.component';
+import { RecuperarPasswordComponent } from './login/recuperar-password/recuperar-password.component';
 
 const routes: Routes = [
   {path: 'sitio-en-mantenimiento', component: SitioEnMantenimientoComponent},
@@ -44,7 +47,10 @@ const routes: Routes = [
   {path: 'motos', component: MotosComponent},
   {path: 'accesorios', component: AccesoriosComponent},
   {path: 'accesorios/cascos', component: ListadoAccesoriosComponent},
-  {path: 'accesorios/accesorio1', component: AccesorioComponent}
+  {path: 'accesorios/accesorio1', component: AccesorioComponent},
+  {path: 'login', component: InicioSesionComponent},
+  {path: 'registro', component: RegistroComponent},
+  {path: 'password/reset', component: RecuperarPasswordComponent}
 ];
 
 @NgModule({
@@ -80,7 +86,10 @@ const routes: Routes = [
     ListadoAccesoriosComponent,
     ListadoCategoriasAccesoriosComponent,
     PaginacionAccesoriosComponent,
-    AccesorioComponent
+    AccesorioComponent,
+    InicioSesionComponent,
+    RegistroComponent,
+    RecuperarPasswordComponent
   ],
   imports: [
     BrowserModule,

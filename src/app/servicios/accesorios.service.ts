@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
 
 export class AccesoriosService {
 
-  private heroes:any[] = [
+  private heroes: any[] = [
     {
       nombre: "Aquaman",
       bio: "El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.",
@@ -31,7 +31,7 @@ export class AccesoriosService {
       bio: "Su principal poder es su capacidad de aumentar su fuerza hasta niveles prácticamente ilimitados a la vez que aumenta su furia. Dependiendo de qué personalidad de Hulk esté al mando en ese momento (el Hulk Banner es el más débil, pero lo compensa con su inteligencia).",
       img: "assets/img/hulk.png",
       aparicion: "1962-05-01",
-      casa:"Marvel"
+      casa: "Marvel"
     },
     {
       nombre: "Linterna Verde",
@@ -63,7 +63,7 @@ export class AccesoriosService {
 
   }
 
-  getHeroes(){
+  getHeroes() {
     return this.heroes;
   }
 

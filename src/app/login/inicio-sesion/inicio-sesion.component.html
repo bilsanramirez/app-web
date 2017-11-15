@@ -1,0 +1,30 @@
+<app-menu></app-menu>
+<div class="container text-white mt-2 mb-5 animated fadeIn fast">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h3>Bienvenido a Didemo</h3>
+      <h4>Inicia sesion</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-12 col-lg-4 mx-auto border border-white p-4">
+      <form action="">
+        <div class="form-group">
+          <label for="email">Correo electronico</label>
+          <input type="text" name="email" id="email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" class="form-control">
+        </div>
+        <div class="form-group text-center">
+          <input type="submit" value="Inicia Sesion" class="btn btn-danger">
+          <a [routerLink]="['/password/reset']" class="d-block mt-2 text-white">¿Olvidaste tu contraseña?</a>
+          <p class="mt-2">¿Aún no tienes cuenta? <a [routerLink]="['/registro']" class="text-white">Regístrate aquí</a></p>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

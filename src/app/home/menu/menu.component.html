@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Talleres</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> Inicia sesion</a>
+                        <a class="nav-link " [routerLinkActive]="['active']" [routerLink]="['/login']"><i class="fa fa-user" aria-hidden="true"></i> Inicia sesion</a>
                       </li>
                     </ul>
               </div>
@@ -69,7 +69,7 @@
                     <li class="nav-item">
                         <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/contacto']">CONTACTO</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item buscador">
                           <input type="text" class="d-none d-lg-inline">
                         </li>
                   </ul>
@@ -79,4 +79,3 @@
     </div>
   </div>
 </div>
-
