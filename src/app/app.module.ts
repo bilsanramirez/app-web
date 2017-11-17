@@ -4,54 +4,64 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
+// Importacion de Componentes
 import { AppComponent } from './app.component';
-import { SitioEnMantenimientoComponent } from './sitio-en-mantenimiento/sitio-en-mantenimiento.component';
-import { LogoComponent } from './logo/logo.component';
-import { TituloComponent } from './titulo/titulo.component';
-import { MensajeComponent } from './mensaje/mensaje.component';
-import { MensajeRedesSocialesComponent } from './mensaje-redes-sociales/mensaje-redes-sociales.component';
-import { IconosRedesSocialesComponent } from './iconos-redes-sociales/iconos-redes-sociales.component';
-import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './home/menu/menu.component';
-import { Carousel1Component } from './home/carousel-1/carousel-1.component';
-import { RedesSocialesComponent } from './home/redes-sociales/redes-sociales.component';
-import { ModulosComponent } from './home/modulos/modulos.component';
-import { FilosofiaComponent } from './home/filosofia/filosofia.component';
-import { FooterComponent } from './home/footer/footer.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { FormularioComponent } from './contacto/formulario/formulario.component';
-import { MapaComponent } from './contacto/mapa/mapa.component';
-import { MotosComponent } from './motos/motos.component';
-import { ListadoMotosComponent } from './motos/listado-motos/listado-motos.component';
-import { PaginacionMotosComponent } from './motos/paginacion-motos/paginacion-motos.component';
-import { MotosRelevantesComponent } from './home/motos/motos.component';
-import { CategoriasMotosComponent } from './categorias-motos/categorias-motos.component';
-import { ListadoCategoriasComponent } from './categorias-motos/listado-categorias/listado-categorias.component';
-import { AccesoriosComponent } from './accesorios/accesorios.component';
-import { ListadoAccesoriosComponent } from './accesorios/listado-accesorios/listado-accesorios.component';
-import { ListadoCategoriasAccesoriosComponent } from './accesorios/listado-categorias-accesorios/listado-categorias-accesorios.component';
-import { PaginacionAccesoriosComponent } from './accesorios/paginacion-accesorios/paginacion-accesorios.component';
-import { AccesorioComponent } from './accesorios/accesorio/accesorio.component';
+import { SitioEnMantenimientoComponent } from './components/sitio-en-mantenimiento/sitio-en-mantenimiento.component';
+import { LogoComponent } from './components/sitio-en-mantenimiento/logo/logo.component';
+import { TituloComponent } from './components/sitio-en-mantenimiento/titulo/titulo.component';
+import { MensajeComponent } from './components/sitio-en-mantenimiento/mensaje/mensaje.component';
+import { MensajeRedesSocialesComponent } from './components/sitio-en-mantenimiento/mensaje-redes-sociales/mensaje-redes-sociales.component';
+import { IconosRedesSocialesComponent } from './components/sitio-en-mantenimiento/iconos-redes-sociales/iconos-redes-sociales.component';
+import { HomeComponent } from './components/home/home.component';
+import { MenuComponent } from './components/home/menu/menu.component';
+import { Carousel1Component } from './components/home/carousel-1/carousel-1.component';
+import { RedesSocialesComponent } from './components/home/redes-sociales/redes-sociales.component';
+import { ModulosComponent } from './components/home/modulos/modulos.component';
+import { FilosofiaComponent } from './components/home/filosofia/filosofia.component';
+import { FooterComponent } from './components/home/footer/footer.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { FormularioComponent } from './components/contacto/formulario/formulario.component';
+import { MapaComponent } from './components/contacto/mapa/mapa.component';
+import { MotosComponent } from './components/motos/motos.component';
+import { ListadoMotosComponent } from './components/motos/listado-motos/listado-motos.component';
+import { PaginacionMotosComponent } from './components/motos/paginacion-motos/paginacion-motos.component';
+import { MotosRelevantesComponent } from './components/home/motos/motos.component';
+import { CategoriasMotosComponent } from './components/motos/categorias-motos/categorias-motos.component';
+import { ListadoCategoriasComponent } from './components/motos/categorias-motos/listado-categorias/listado-categorias.component';
+import { AccesoriosComponent } from './components/accesorios/accesorios.component';
+import { ListadoAccesoriosComponent } from './components/accesorios/listado-accesorios/listado-accesorios.component';
+import { ListadoCategoriasAccesoriosComponent } from './components/accesorios/listado-categorias-accesorios/listado-categorias-accesorios.component';
+import { PaginacionAccesoriosComponent } from './components/accesorios/paginacion-accesorios/paginacion-accesorios.component';
+import { AccesorioComponent } from './components/accesorios/accesorio/accesorio.component';
+import { InicioSesionComponent } from './components/login/inicio-sesion/inicio-sesion.component';
+import { RegistroComponent } from './components/login/registro/registro.component';
+import { RecuperarPasswordComponent } from './components/login/recuperar-password/recuperar-password.component';
+import { ListadoCategoriasPromocionesComponent } from './components/propociones/listado-categorias-promociones/listado-categorias-promociones.component';
 
-// Servicios
-import { AccesoriosService } from './servicios/accesorios.service';
-import { InicioSesionComponent } from './login/inicio-sesion/inicio-sesion.component';
-import { RegistroComponent } from './login/registro/registro.component';
-import { RecuperarPasswordComponent } from './login/recuperar-password/recuperar-password.component';
-
+// Rutas
 const routes: Routes = [
   {path: 'sitio-en-mantenimiento', component: SitioEnMantenimientoComponent},
   {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'contacto', component: ContactoComponent},
-  {path: 'motos-categorias', component: CategoriasMotosComponent},
-  {path: 'motos', component: MotosComponent},
+
+  {path: 'motos/pioneer', component: MotosComponent},
+  {path: 'motos', component: CategoriasMotosComponent},
+
   {path: 'accesorios', component: AccesoriosComponent},
   {path: 'accesorios/cascos', component: ListadoAccesoriosComponent},
   {path: 'accesorios/accesorio1', component: AccesorioComponent},
+
   {path: 'login', component: InicioSesionComponent},
   {path: 'registro', component: RegistroComponent},
-  {path: 'password/reset', component: RecuperarPasswordComponent}
+  {path: 'password/reset', component: RecuperarPasswordComponent},
+
+  {path: 'promociones', component: ListadoCategoriasPromocionesComponent}
+
 ];
+
+// Servicios
+import { AccesoriosService } from './servicios/accesorios.service';
 
 @NgModule({
   declarations: [
@@ -89,7 +99,8 @@ const routes: Routes = [
     AccesorioComponent,
     InicioSesionComponent,
     RegistroComponent,
-    RecuperarPasswordComponent
+    RecuperarPasswordComponent,
+    ListadoCategoriasPromocionesComponent
   ],
   imports: [
     BrowserModule,
