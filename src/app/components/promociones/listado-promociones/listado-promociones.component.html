@@ -1,0 +1,67 @@
+<app-menu></app-menu>
+<div class="container animated fadeIn">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="text-center text-white text-uppercase">Promociones Motos</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-6 my-4">
+        <div class="card w-100">
+            <img class="card-img-top" src="assets/img/promociones/motos/moto2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Moto 123</h4>
+              <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Ver promocion</button>
+            </div>
+          </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-6 my-4">
+        <div class="card w-100">
+            <img class="card-img-top" src="assets/img/promociones/motos/moto2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Moto 123</h4>
+              <a href="#" class="btn btn-danger btn-block">Ver Promocion</a>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+<!-- Modal para mostrar la moto seleccionada -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Promocion - Moto 123</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+      <div class="container bg-white px-3 my-3 animated fadeIn">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <img src="assets/img/promociones/motos/moto2.jpg" class="img-fluid" alt="moto 1">
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Moto 1</h3>
+            <h4>Descripcion</h4>
+            <p>Se describe la moto 1, se describen sus principales caracteristicas.</p>
+            <h4>Precio anterior</h4>
+            <p>L.30,000.00</p>
+            <h4>Precio promocion</h4>
+            <p>L.22,000.00</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-12">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- / Modal para mostrar el accesorio seleccionado -->
+<app-footer></app-footer>

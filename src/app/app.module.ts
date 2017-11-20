@@ -36,7 +36,7 @@ import { AccesorioComponent } from './components/accesorios/accesorio/accesorio.
 import { InicioSesionComponent } from './components/login/inicio-sesion/inicio-sesion.component';
 import { RegistroComponent } from './components/login/registro/registro.component';
 import { RecuperarPasswordComponent } from './components/login/recuperar-password/recuperar-password.component';
-import { ListadoCategoriasPromocionesComponent } from './components/propociones/listado-categorias-promociones/listado-categorias-promociones.component';
+import { ListadoCategoriasPromocionesComponent } from './components/promociones/listado-categorias-promociones/listado-categorias-promociones.component';
 
 // Rutas
 const routes: Routes = [
@@ -56,12 +56,15 @@ const routes: Routes = [
   {path: 'registro', component: RegistroComponent},
   {path: 'password/reset', component: RecuperarPasswordComponent},
 
-  {path: 'promociones', component: ListadoCategoriasPromocionesComponent}
+  {path: 'promociones', component: ListadoCategoriasPromocionesComponent},
+  {path: 'promociones/motos', component: ListadoPromocionesComponent}
 
 ];
 
 // Servicios
 import { AccesoriosService } from './servicios/accesorios.service';
+import { ListadoPromocionesComponent } from './components/promociones/listado-promociones/listado-promociones.component';
+import { PromocionComponent } from './components/promociones/promocion/promocion.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +103,9 @@ import { AccesoriosService } from './servicios/accesorios.service';
     InicioSesionComponent,
     RegistroComponent,
     RecuperarPasswordComponent,
-    ListadoCategoriasPromocionesComponent
+    ListadoCategoriasPromocionesComponent,
+    ListadoPromocionesComponent,
+    PromocionComponent
   ],
   imports: [
     BrowserModule,
