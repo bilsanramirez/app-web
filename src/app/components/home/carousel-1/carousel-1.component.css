@@ -1,6 +1,12 @@
-
 .carousel {
   position: relative;
   top: -70px;
 }
 
+.carousel-indicators{
+  display: none;
+}
+
+a {
+  display: none;
+}

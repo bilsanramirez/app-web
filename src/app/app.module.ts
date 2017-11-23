@@ -37,9 +37,14 @@ import { InicioSesionComponent } from './components/login/inicio-sesion/inicio-s
 import { RegistroComponent } from './components/login/registro/registro.component';
 import { RecuperarPasswordComponent } from './components/login/recuperar-password/recuperar-password.component';
 import { ListadoCategoriasPromocionesComponent } from './components/promociones/listado-categorias-promociones/listado-categorias-promociones.component';
-
+import { ListadoPromocionesComponent } from './components/promociones/listado-promociones/listado-promociones.component';
+import { PromocionComponent } from './components/promociones/promocion/promocion.component';
+import { CredidemoComponent } from './components/credidemo/credidemo/credidemo.component';
+import { HasTuCitaComponent } from './components/talleres/has-tu-cita/has-tu-cita.component';
+import { ListadoTiendasComponent } from './components/tiendas/listado-tiendas/listado-tiendas.component';
+import { ServicioAlClienteComponent } from './components/servicio-al-cliente/servicio-al-cliente.component';
 // Rutas
-const routes: Routes = [
+const ROUTES: Routes = [
   {path: 'sitio-en-mantenimiento', component: SitioEnMantenimientoComponent},
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
@@ -53,18 +58,25 @@ const routes: Routes = [
   {path: 'accesorios/accesorio1', component: AccesorioComponent},
 
   {path: 'login', component: InicioSesionComponent},
-  {path: 'registro', component: RegistroComponent},
   {path: 'password/reset', component: RecuperarPasswordComponent},
 
   {path: 'promociones', component: ListadoCategoriasPromocionesComponent},
-  {path: 'promociones/motos', component: ListadoPromocionesComponent}
+  {path: 'promociones/motos', component: ListadoPromocionesComponent},
 
+  {path: 'credidemo', component: CredidemoComponent},
+
+  {path: 'talleres', component: HasTuCitaComponent},
+
+  {path: 'tiendas', component: ListadoTiendasComponent},
+
+  {path: 'servicio-al-cliente', component: ServicioAlClienteComponent}
 ];
 
 // Servicios
 import { AccesoriosService } from './servicios/accesorios.service';
-import { ListadoPromocionesComponent } from './components/promociones/listado-promociones/listado-promociones.component';
-import { PromocionComponent } from './components/promociones/promocion/promocion.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -105,13 +117,17 @@ import { PromocionComponent } from './components/promociones/promocion/promocion
     RecuperarPasswordComponent,
     ListadoCategoriasPromocionesComponent,
     ListadoPromocionesComponent,
-    PromocionComponent
+    PromocionComponent,
+    CredidemoComponent,
+    HasTuCitaComponent,
+    ListadoTiendasComponent,
+    ServicioAlClienteComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [ AccesoriosService ],
   bootstrap: [AppComponent]

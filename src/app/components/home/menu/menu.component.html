@@ -34,10 +34,10 @@
               <div class="col-12 menu1">
                   <ul class="nav justify-content-end">
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Servicio al cliente</a>
+                        <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/servicio-al-cliente']"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> Servicio al cliente</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Talleres</a>
+                        <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/talleres']"><i class="fa fa-cog" aria-hidden="true"></i> Talleres</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link " [routerLinkActive]="['active']" [routerLink]="['/login']"><i class="fa fa-user" aria-hidden="true"></i> Inicia sesion</a>
@@ -55,13 +55,10 @@
                       <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/motos']">{{ menu[0] }}</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">REPUESTOS</a>
-                    </li>
-                    <li class="nav-item">
                       <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/accesorios']">ACCESORIOS</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">CREDITO</a>
+                      <a class="nav-link" [routerLinkActive]="['active']" [routerLink]="['/credidemo']">CREDITO</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" [routerLinkActive]="['active']"  [routerLink]="['/promociones']">PROMOCIONES</a>

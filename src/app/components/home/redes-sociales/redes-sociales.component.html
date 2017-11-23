@@ -1,8 +1,12 @@
 <div id="redes-sociales">
-  <a href=""><i class="fa fa-1x fa-list-alt d-block p-2" title="Formulario didemo" aria-hidden="true"></i></a>
+    <a *ngFor="let redSocial of redesSociales" [href]="redSocial.ruta" target="_blank"><i class="fa fa-{{redSocial.icono}} fa-1x d-block p-2" [title]="redSocial.nombre"  aria-hidden="true"></i></a>
+
+
+  <!-- <a href=""><i class="fa fa-1x fa-list-alt d-block p-2" title="Formulario didemo" aria-hidden="true"></i></a>
   <a href=""><i class="fa fa-facebook fa-1x d-block p-2" title="Facebook didemo" aria-hidden="true"></i></a>
   <a href=""><i class="fa fa-envelope-o fa-1x d-block p-2" title="Correo didemo" aria-hidden="true"></i></a>
   <a href=""><i class="fa fa-youtube fa-1x d-block p-2" title="Youtube didemo" aria-hidden="true"></i></a>
   <a href=""><i class="fa fa-instagram fa-1x d-block p-2" title="Instagram didemo" aria-hidden="true"></i></a>
-  <a href=""><i class="fa fa-twitter fa-1x d-block p-2" title="Twitter didemo" aria-hidden="true"></i></a>
+  <a href=""><i class="fa fa-twitter fa-1x d-block p-2" title="Twitter didemo" aria-hidden="true"></i></a> -->
+
 </div>

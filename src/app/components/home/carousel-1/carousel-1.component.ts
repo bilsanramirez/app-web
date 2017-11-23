@@ -7,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Carousel1Component implements OnInit {
 
+  indicadores: string;
+
   constructor() { }
 
 
   ngOnInit() {
+  }
+
+  mostrarIndicadores() {
+    this.indicadores = 'd-flex';
+  }
+
+  ocultarIndicadores() {
+    this.indicadores = 'd-none';
   }
 
 }
