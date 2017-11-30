@@ -5,7 +5,7 @@ div {
   top: 30%;
   color: white;
   z-index: 7;
-  border-radius: 3px 0 0 3px;
+  border-radius: 15px 0 0 15px;
 }
 
 #redes-sociales a {
@@ -17,3 +17,4 @@ div {
   color: #D1CFCF;
   text-decoration: none;
 }
+

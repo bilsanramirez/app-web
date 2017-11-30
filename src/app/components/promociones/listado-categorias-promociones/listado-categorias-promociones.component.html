@@ -1,25 +1,98 @@
 <app-menu></app-menu>
-<h1 class="text-white text-center animated fadeIn fast">Promociones</h1>
+<h1 class="text-white text-center animated fadeIn fast">Promociones Didemo</h1>
+<p class="text-center text-white">Encuentra descuentos y promociones en diferentes tiendas a lo largo del país.</p>
+<hr>
 <div class="container my-4 animated fadeIn fast">
   <div class="row">
-    <div class="col-12 col-md-6 my-2 my-md-0">
+    <div class="col-12 col-md-4 my-2 my-md-0 mb-4">
       <div class="card">
         <img class="card-img-top" src="assets/img/promociones/motos/moto1.jpg" height="280" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title text-center">Promociones Motos</h4>
-          <a [routerLink]="['/promociones/motos']" class="btn btn-danger btn-block">ir a promociones</a>
+          <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Mas detalles</button>
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6 my-2 my-md-0">
+    <div class="col-12 col-md-4 my-2 my-md-0 mb-4">
       <div class="card">
         <img class="card-img-top" src="assets/img/promociones/accesorios/accesorio1.jpg" height="280" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title text-center">Promociones Accesorios</h4>
-          <a href="#" class="btn btn-danger btn-block">ir a promociones</a>
+          <a href="#" class="btn btn-danger btn-block">Mas detalles</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 my-2 my-md-0 pb-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/promociones/motos/moto1.jpg" height="280" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Promociones Accesorios</h4>
+          <a href="#" class="btn btn-danger btn-block">Mas detalles</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 my-2 my-md-0 pb-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/promociones/accesorios/accesorio1.jpg" height="280" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Promociones Accesorios</h4>
+          <a href="#" class="btn btn-danger btn-block">Mas detalles</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 my-2 my-md-0 pb-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/promociones/accesorios/accesorio1.jpg" height="280" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Promociones Accesorios</h4>
+          <a href="#" class="btn btn-danger btn-block">Mas detalles</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 my-2 my-md-0 pb-4">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/promociones/motos/moto1.jpg" height="280" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Promociones Accesorios</h4>
+          <a href="#" class="btn btn-danger btn-block">Mas detalles</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 <app-footer></app-footer>
+
+<!-- Modal para mostrar el detalle de las promociones  -->
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Promociones Didemo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+      <div class="container bg-white py-5 px-3 my-3 animated fadeIn">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="assets/img/promociones/motos/moto1.jpg" class="img-fluid" alt="moto 1">
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Promocin 1</h3>
+            <h4>Descripcion Promocion</h4>
+            <p>Se describe la promocion, se describen sus principales caracteristicas.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-12">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!-- / Modal para mostrar el detalle de las promociones -->

@@ -43,6 +43,8 @@ import { CredidemoComponent } from './components/credidemo/credidemo/credidemo.c
 import { HasTuCitaComponent } from './components/talleres/has-tu-cita/has-tu-cita.component';
 import { ListadoTiendasComponent } from './components/tiendas/listado-tiendas/listado-tiendas.component';
 import { ServicioAlClienteComponent } from './components/servicio-al-cliente/servicio-al-cliente.component';
+import { ListadoZonaTalleresComponent } from './components/talleres/listado-zona-talleres/listado-zona-talleres.component';
+import { ListadoTalleresComponent } from './components/talleres/listado-talleres/listado-talleres.component';
 // Rutas
 const ROUTES: Routes = [
   {path: 'sitio-en-mantenimiento', component: SitioEnMantenimientoComponent},
@@ -65,15 +67,19 @@ const ROUTES: Routes = [
 
   {path: 'credidemo', component: CredidemoComponent},
 
-  {path: 'talleres', component: HasTuCitaComponent},
+  {path: 'talleres', component: ListadoZonaTalleresComponent},
+  {path: 'talleres/tallerer-1', component: ListadoTalleresComponent},
 
   {path: 'tiendas', component: ListadoTiendasComponent},
 
   {path: 'servicio-al-cliente', component: ServicioAlClienteComponent}
+
 ];
 
 // Servicios
 import { AccesoriosService } from './servicios/accesorios.service';
+
+
 
 
 
@@ -121,7 +127,9 @@ import { AccesoriosService } from './servicios/accesorios.service';
     CredidemoComponent,
     HasTuCitaComponent,
     ListadoTiendasComponent,
-    ServicioAlClienteComponent
+    ServicioAlClienteComponent,
+    ListadoZonaTalleresComponent,
+    ListadoTalleresComponent
   ],
   imports: [
     BrowserModule,

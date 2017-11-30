@@ -26,3 +26,10 @@
 .fadeIn {
   animation-name: fadeIn;
 }
+
+hr {
+  border: 0.5px solid white;
+  width: 75%;
+  margin: auto;
+}
+

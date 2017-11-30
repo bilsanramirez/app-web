@@ -10,13 +10,6 @@
   color: #FDFFFE;
 }
 
-img{
-  width: 100%;
-  height: 250px;
-}
-
-
-
 h2 {
   margin: 0;
   padding: 0;
@@ -24,9 +17,32 @@ h2 {
 
 #linea-inferior {
   width: 80px;
-  height: 10px;
+  height: 7px;
   background-color: #EF1C2D;
   position: absolute;
-  top:210px;
+  top:150px;
 }
 
+/* .caja-sombra:hover {
+  box-shadow: 0px 0px 5px white;
+} */
+
+.caja-sombra {
+  transition: 0.3s all ease-in-out;
+}
+
+.fondo {
+  background-color: white;
+}
+
+img {
+  height: 100%;
+}
+
+a:hover {
+  transition: 0.3s all ease-in-out;
+}
+/*
+.modulo-alto {
+  height: 200px;
+} */
