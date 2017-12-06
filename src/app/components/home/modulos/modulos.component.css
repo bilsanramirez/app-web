@@ -20,7 +20,7 @@ h2 {
   height: 7px;
   background-color: #EF1C2D;
   position: absolute;
-  top:150px;
+  bottom:20px;
 }
 
 /* .caja-sombra:hover {
@@ -42,6 +42,7 @@ img {
 a:hover {
   transition: 0.3s all ease-in-out;
 }
+
 /*
 .modulo-alto {
   height: 200px;

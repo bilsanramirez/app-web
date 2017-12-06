@@ -1,22 +1,59 @@
 <app-menu></app-menu>
 <div class="container animated fadeIn fast">
+    <div class="row pt-3 pb-2">
+        <div class="col-6">
+          <h3 class="text-letf text-white text-uppercase d-inline">Cascos</h3>
+        </div>
+        <div class="col-4 ml-auto">
+          <div class="input-group">
+            <input type="text" class="form-control form-control-sm" placeholder="Buscar casco..." aria-label="Buscar casco...">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">Buscar</button>
+            </span>
+          </div>
+        </div>
+      </div>
   <div class="row">
-    <div class="col-12">
-      <h3 class="text-center text-white text-uppercase">Cascos</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4" *ngFor="let accesorio of accesorios">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4">
         <div class="card w-100">
-            <img class="card-img-top" [src]="accesorio.img" alt="Card image cap">
+            <img class="card-img-top" src="/assets/img/accesorios_para_motos/cascos/casco1.png" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title">{{ accesorio.nombre }}</h4>
-              <p class="card-text">{{ accesorio.precio }}</p>
-              <!--<a [routerLink]="['/accesorios/accesorio1']" class="btn btn-danger">Ver casco</a>-->
+              <h4 class="card-title">Casco ***</h4>
+              <p class="card-text">L.400.00</p>
               <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Ver casco</button>
             </div>
           </div>
     </div>
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4">
+      <div class="card w-100">
+          <img class="card-img-top" src="/assets/img/accesorios_para_motos/cascos/casco1.png" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Casco ***</h4>
+            <p class="card-text">L.400.00</p>
+            <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Ver casco</button>
+          </div>
+        </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4">
+    <div class="card w-100">
+        <img class="card-img-top" src="/assets/img/accesorios_para_motos/cascos/casco1.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Casco ***</h4>
+          <p class="card-text">L.400.00</p>
+          <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Ver casco</button>
+        </div>
+      </div>
+</div>
+<div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4">
+  <div class="card w-100">
+      <img class="card-img-top" src="/assets/img/accesorios_para_motos/cascos/casco1.png" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">Casco ***</h4>
+        <p class="card-text">L.400.00</p>
+        <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target=".bd-example-modal-lg">Ver casco</button>
+      </div>
+    </div>
+</div>
   </div>
 </div>
 <!-- Modal para mostrar el accesorio seleccionado -->

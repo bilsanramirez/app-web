@@ -7,16 +7,16 @@
 </div>
 <div class="container animated fadeIn fast">
   <div class="row">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4" *ngFor="let categoria_accesorio of categoriasAccesorios">
         <div class="card w-100">
             <img class="card-img-top" src="assets/img/accesorios_para_motos/cascos/casco1.png" alt="Card image cap">
             <div class="card-body">
-              <h4 class="card-title text-center">Cascos</h4>
+              <h4 class="card-title text-center">{{ categoria_accesorio }}</h4>
               <a [routerLink]="['/accesorios/cascos']" class="btn btn-danger btn-block">Ir a cascos</a>
             </div>
           </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4">
+    <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3 my-4">
         <div class="card w-100">
             <img class="card-img-top" src="assets/img/accesorios_para_motos/guantes/guante1.jpg" alt="Card image cap">
             <div class="card-body">
@@ -42,6 +42,6 @@
             <a href="#" class="btn btn-danger btn-block">Ir a guantes</a>
           </div>
         </div>
-  </div>
+  </div> -->
   </div>
 </div>

@@ -45,6 +45,7 @@ import { ListadoTiendasComponent } from './components/tiendas/listado-tiendas/li
 import { ServicioAlClienteComponent } from './components/servicio-al-cliente/servicio-al-cliente.component';
 import { ListadoZonaTalleresComponent } from './components/talleres/listado-zona-talleres/listado-zona-talleres.component';
 import { ListadoTalleresComponent } from './components/talleres/listado-talleres/listado-talleres.component';
+import { SeparadorComponent } from './components/shared/separador/separador.component';
 // Rutas
 const ROUTES: Routes = [
   {path: 'sitio-en-mantenimiento', component: SitioEnMantenimientoComponent},
@@ -78,11 +79,6 @@ const ROUTES: Routes = [
 
 // Servicios
 import { AccesoriosService } from './servicios/accesorios.service';
-
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -129,7 +125,8 @@ import { AccesoriosService } from './servicios/accesorios.service';
     ListadoTiendasComponent,
     ServicioAlClienteComponent,
     ListadoZonaTalleresComponent,
-    ListadoTalleresComponent
+    ListadoTalleresComponent,
+    SeparadorComponent
   ],
   imports: [
     BrowserModule,

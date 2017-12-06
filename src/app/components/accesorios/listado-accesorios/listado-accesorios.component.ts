@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AccesoriosService, Accesorio } from '../../../servicios/accesorios.service';
+import { AccesoriosService } from '../../../servicios/accesorios.service';
+import { AccesorioComponent } from 'app/components/accesorios/accesorio/accesorio.component';
 
 @Component({
   selector: 'app-listado-accesorios',
@@ -8,15 +9,14 @@ import { AccesoriosService, Accesorio } from '../../../servicios/accesorios.serv
 })
 export class ListadoAccesoriosComponent implements OnInit {
 
-  accesorios: Accesorio[] = [];
 
-  constructor( private _accesoriosService: AccesoriosService ) {
+
+  constructor( private _accesoriosService: AccesorioComponent ) {
 
    }
 
   ngOnInit() {
-    this.accesorios = this._accesoriosService.getAccesorios();
-    console.log( this.accesorios );
+
   }
 
 }
